@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script>
+        var leftBtn = document.querySelector('#left');
+        var rightBtn = document.querySelector('#right');
+
+        leftBtn.addEventListener('click', slide);
+        rightBtn.addEventListener('click', slide);
+
+        function slide(e) {
+            e.target.id === 'left' ? scroll(100) : scroll(-100);
+        }
+
+        function scroll(val) {
+            document.querySelector('ul').scrollBy({
+                left: val,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="/IMG-PNG-SVG/Logo.png" alt="" width="115" height="125">
+
+
+
+
+                <ul class="nav">
+                    <li><a href=""> Каталог</a></li>
+                    <li><a href="">Индивидуальные заказы</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="tel:+7(999)1234567">+7 (999)-123-45-67 </a></li>
+                    <li>
+                        <ul>
+                            <li><a href="">En</a></li>
+                            <li><a href="">Ru</a></li>
+                        </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg">
+                <img src="/IMG-PNG-SVG/2be3e5c5095ec0b6a2ccac53c200deac.png" alt="" style="max-width: max-content;">
+
+            </div>
+            <div class="container">
+                <h1>
+                    <span style="color:red ;">К</span>аталог <span style="color:red ;">Г</span>отовых <span
+                        style="color:red ;">Т</span>оваров
+                </h1>
+                <div class="catalog">
+                    <div class="catalog-li">
+                        <button id="left"></button>
+                        <ul>
+                            <li><img src="/IMG-PNG-SVG/5cf970a20fff81adad75ccb4.jpg" alt=""></li>
+                            <li><img src="/IMG-PNG-SVG/a6a9b7e7009700ad0a3582158e064b17.jpg" alt=""></li>
+                            <li>3</li>
+                            <li>4</li>
+                            <li>5</li>
+                            <li>6</li>
+                            <li>7</li>
+                            `
+                          
+                        </ul>
+                        <button id="right"></button>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+    </header>
+    
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+ul li{
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-transform:none;
+
+}
+
+.container{
+    display: block;
+    margin: 0;
+    padding: 0; 
+    background-color: rgb(235, 233, 233);
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+body{
+    max-width: 100%;
+
+    
+}
+
+/* Import font-family */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+/* ===================================Header============================== */
+.logo{
+    display: flex;
+    /* justify-content: center; */
+    margin-left: 30px;
+    flex: 2;
+
+}
+.logo .nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-right: 100px;
+    padding-left: 30px;
+    flex: 1;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    
+    /* border: 1px solid red; */
+}
+
+.nav a:hover{
+    border-bottom: 1px solid black;
+
+    opacity: 0.8;
+    color: rgb(43, 43, 43);
+
+}
+
+
+.bg{
+    margin-bottom: 40px;
+
+}
+
+
+.catalog{
+    height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.catalog-li{
+    width: 100%;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 60px 1fr 60px;
+  grid-template-rows: 50px;
+}
+.catalog-li ul{
+    width: 100%;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(20, 500px);
+    list-style: none;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+}
+.catalog-li li{
+    background-color: #c62828;
+    scroll-snap-align: center;
+}
+
+button {
+    background-color: #212121;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #left {
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  }
+  
+  #right {
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+  }
