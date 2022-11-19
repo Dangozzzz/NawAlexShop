@@ -24,6 +24,8 @@ a{
     margin: 0;
     padding: 0; 
     background-color: rgb(235, 233, 233);
+    max-width:100%;
+    min-width:240px;
 }
 
 h1{
