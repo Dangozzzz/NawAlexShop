@@ -6,24 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
-    <script>
-        var leftBtn = document.querySelector('#left');
-        var rightBtn = document.querySelector('#right');
 
-        leftBtn.addEventListener('click', slide);
-        rightBtn.addEventListener('click', slide);
-
-        function slide(e) {
-            e.target.id === 'left' ? scroll(100) : scroll(-100);
-        }
-
-        function scroll(val) {
-            document.querySelector('ul').scrollBy({
-                left: val,
-                behavior: 'smooth'
-            });
-        }
-    </script>
+    <script language="js.js"></script>
     <title>Document</title>
 </head>
 
@@ -44,15 +28,19 @@
                     <li><a href="tel:+7(999)1234567">+7 (999)-123-45-67 </a></li>
                     <li>
                         <ul>
-                            <li><a href="">En</a></li>
+                            <li><a href="">En</a>
+                                <ul>
+                            
                             <li><a href="">Ru</a></li>
+                        </ul>
+                    </li>
                         </ul>
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="bg">
-                <img src="IMG-PNG-SVG/2be3e5c5095ec0b6a2ccac53c200deac.png" alt="" style="max-width: max-content;">
+                <img src="/IMG-PNG-SVG/2be3e5c5095ec0b6a2ccac53c200deac.png" alt="" style="max-width: max-content;">
 
             </div>
             <div class="container">
@@ -71,8 +59,8 @@
                             <li>5</li>
                             <li>6</li>
                             <li>7</li>
-                            
-                          
+
+
                         </ul>
                         <button id="right"></button>
                     </div>
@@ -87,50 +75,54 @@
 
         </div>
 
- <div id="outer_container">
-            <div id="thumbScroller">
-                <div class="container">
-                    <div class="content">
-                        <div><a href="#"><img src="thumbs/thumb1.jpg" title="Дорога" alt="Дорога" class="thumb" /></a></div>
-                    </div>
-                    <div class="content">
-                        <div><a href="#"><img src="thumbs/thumb2.jpg" title="Цветок" alt="Цветок" class="thumb" /></a></div>
-                    </div>
-                    <div class="content">
-                        <div><a href="#"><img src="thumbs/thumb3.jpg" title="Сумерки" alt="Сумерки" class="thumb" /></a></div>
-                    </div>
-                    <div class="content">
-                        <div><a href="#"><img src="thumbs/thumb4.jpg" title="Водопад" alt="Водопад" class="thumb" /></a></div>
-                    </div>
-                    <div class="content">
-                        <div><a href="#"><img src="thumbs/thumb5.jpg" title="Каньон" alt="Каньон" class="thumb" /></a></div>
-                    </div>
-                    <div class="content">
-                        <div><a href="#"><img src="thumbs/thumb6.jpg" title="Дорога" alt="Дорога" class="thumb" /></a></div>
-                    </div>
-                    <div class="content">
-                        <div><a href="#"><img src="thumbs/thumb7.jpg" title="Лес" alt="Лес" class="thumb" /></a></div>
-                    </div>
-                    <div class="content">
-                        <div><a href="#"><img src="thumbs/thumb8.jpg" title="Дом" alt="Дом" class="thumb" /></a></div>
-                    </div>
-                    <div class="content">
-                        <div><a href="#"><img src="thumbs/thumb9.jpg" title="Рай" alt="Рай" class="thumb" /></a></div>
-                    </div>
-                    <div class="content">
-                        <div><a href="#"><img src="thumbs/thumb10.jpg" title="Деревья" alt="Деревья" class="thumb" /></a></div>
-                    </div>
-                    <div class="content">
-                        <div><a href="#"><img src="thumbs/thumb11.jpg" title="Листья" alt="Листья" class="thumb" /></a></div>
-                    </div>
-                </div>
-            </div>
-            </div>
 
 
 
     </header>
-    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
 </body>
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="box1">
+            <h3>О компании</h3>
+            <ul>
+                
+                <li>О нас</li>
+                <li>Отзывы покупателей</li>
+                <li>Реклама</li>
+                <li></li>
+                <li></li>
+               
+            </ul>
+        </div>
+        <div  class="box2">
+            <h3>Покупателям</h3>
+            <ul>
+            
+                <li>Акции</li>
+                <li>Возврат</li>
+                <li>Способы оплаты</li>
+               
+            </ul>
+        </div>
+        <div  class="box3">
+            <h3>Услуги</h3>
+            <ul>
+                
+                <li>Каталог</li>
+                <li>Как заказать</li>
+                <li>Как оплатить</li>
+                <li>Доставка</li>
+                <li>Самовывоз</li>
+                <li>Вопросы и ответы</li>
+                <li>Список покупок</li>
+                
+            </ul>
+        </div>
+
+    </div>
+
+</footer>
 
 </html>
