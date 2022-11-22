@@ -34,7 +34,8 @@ h1{
     text-align: center;
 }
 body{
-    max-width: 100%;
+     max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
 
     
 }
@@ -120,3 +121,33 @@ button {
   #right {
     clip-path: polygon(0 0, 100% 50%, 0 100%);
   }
+
+
+
+  footer .container{
+    background-color: black;
+  }
+ footer ul, h3{
+    color: #fff;
+  }
+
+
+
+  nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+/* отображаем выпадающий список при наведении */
+nav ul li:hover > ul {
+    display:inherit;
+}
+
+/* первый уровень выпадающего списка */
+nav ul ul li {
+    min-width:170px;
+    float:none;
+    display:list-item;
+    position: relative;
+}
